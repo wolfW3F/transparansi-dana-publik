@@ -172,6 +172,10 @@
       footer p{margin:4px 0 0;font-size:13.5px;color:var(--ink-soft)}
       footer .per{font-size:13.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums;text-align:right}
       footer .per strong{color:var(--ink);display:block}
+      .tombol-owner{display:inline-flex;flex-direction:column;align-items:center;gap:5px;text-decoration:none;color:var(--sawah-deep);border:1.5px solid var(--sawah);border-radius:12px;padding:9px 22px 8px;background:var(--card);font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:lowercase;box-shadow:var(--shadow-sm);transition:transform .15s ease,background .15s ease}
+      .tombol-owner:hover{background:var(--sawah-soft);transform:translateY(-1px)}
+      .tombol-owner svg{width:20px;height:20px}
+      footer .owner-tengah{display:flex;align-items:flex-start}
 
       .lightbox{position:fixed;inset:0;z-index:50;background:rgba(10,16,6,.88);display:none;align-items:center;justify-content:center;padding:20px}
       .lightbox.buka{display:flex}
@@ -335,6 +339,12 @@
     <footer>
       <div class="wrap isi">
         <div><div class="judul-kaki">Transparansi Dana Publik</div><p>Laporan Terbuka &amp; Akuntabel — dana bersama, diawasi bersama.</p></div>
+        <div class="owner-tengah">
+          <a class="tombol-owner" href="https://www.instagram.com/d3v_wolf/" target="_blank" rel="noopener" aria-label="Instagram owner, @d3v_wolf">
+            <span>owner</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+        </div>
         <div class="per" id="perTanggal"><strong>Terakhir diperbarui: 4 November 2026</strong>Menunggu laporan resmi pertama dari Kepala Desa.</div>
       </div>
     </footer>
